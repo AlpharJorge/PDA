@@ -7,48 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
-    
     <main class="tela-principal">
-
         <section class='conteudos'>
-
             <h1>QUIZ</h1>
-
             <article class='centro' id='instrucoes'>
                 Leia a questão e clique na resposta correta
             </article>
-
-            
-                    <article class='questoes'>
-                        <!-- ... -->
-                        <header class='questao'>
-                            <!-- ... -->
-                            <h2 id='pergunta'>Qual é a capital do Brasil?</h2>
-                        </header>
-                    
-                        <div class='corpo'>
-                            <ol type='A' id='alternativas'>
-                                <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, "Brasília")'>São Paulo</li>
-                                <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, "Brasília")'>Rio de Janeiro</li>
-                                <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, "Brasília")'>Brasília</li>
-                                <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, "Brasília")'>Penedo</li>
-                            </ol>
-                            
-                          
-                    </article>
+            <article class='questoes'>
+                <header class='questao'>
+                    <span id='numQuestao'></span>
+                    <h2 id='pergunta'></h2>
+                </header>
+                <div class='corpo'>
+                    <ol type='A' id='alternativas'>
+                        <li id='a' value='1A' class='respostas' onClick='verificarResposta(this)'></li>
+                        <li id='b' value='1B' class='respostas' onClick='verificarResposta(this)'></li>
+                        <li id='c' value='1C' class='respostas' onClick='verificarResposta(this)'></li>
+                        <li id='d' value='1D' class='respostas' onClick='verificarResposta(this)'></li>
+                    </ol>
                 </div>
             </article>
-            
-            
-            
         </section>
-
-        
     </main>
 
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loop For e While</title>
+</head>
+<body>
+  <h1>Números de 1 a 10 - Loop For</h1>
+  <p id="loopForResult"></p>
+
+  <h1>Números de 1 a 10 - Loop While</h1>
+  <p id="loopWhileResult"></p>
+
+  <script>
+    // Loop For
+    var loopForResult = ""; // Variável para armazenar os números do loop for
+
+    for (var i = 1; i <= 10; i++) {
+      loopForResult += i + " "; // Adiciona cada número ao resultado
+    }
+
+    document.getElementById("loopForResult").textContent = loopForResult; // Exibe o resultado no elemento <p>
+
+    // Loop While
+    var loopWhileResult = ""; // Variável para armazenar os números do loop while
+    var j = 1; // Inicializa o contador
+
+    while (j <= 10) {
+      loopWhileResult += j + " "; // Adiciona cada número ao resultado
+      j++; // Incrementa o contador
+    }
+
+    document.getElementById("loopWhileResult").textContent = loopWhileResult; // Exibe o resultado no elemento <p>
+  </script>
+</body>
+</html>

@@ -18,7 +18,7 @@ body {
 main {
     width: 100%;
     height: 100%;
-    padding: 1rem; /* espacamento interno */
+    padding: 1rem; 
 }
 
 section {
@@ -59,7 +59,7 @@ h1 {
     margin-left: 1rem;
 }
 
-/* article que acomoda a questao completa */
+/* questão toda */
 .questoes {
     padding: 1.5rem;
     border: 1px solid #ececec;
